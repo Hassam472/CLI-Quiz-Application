@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
-console.log(chalk.bgGray.bold.blackBright("Welcome to TypeScript Quiz Exam"));
+console.log(chalk.bgYellow.bold.blackBright("Welcome to TypeScript Quiz Exam"));
 const questions_Answer = {
     Q1: "Q1: What is TypeScript?",
     A1: "A superset of JavaScript",
@@ -213,5 +213,5 @@ while (quiz_Answer.seeResult) {
         console.log('10)', chalk.redBright.bold("wrong!"), chalk.bold(`right answer is "${chalk.yellowBright(questions_Answer.A10)}"`));
     }
     quiz_Answer = quiz_Answer.seeResult;
-    console.log(chalk.bold.bgCyanBright.underline.italic(`Your Score is ${chalk.blackBright(score / 50 * 100, '%')}`));
+    console.log(chalk.bold.bgYellow.underline.italic(`Your Score is ${chalk.blackBright(score / 50 * 100, '%')}`));
 }
